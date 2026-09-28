@@ -5,8 +5,23 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.venv-1/
 venv/
+venv311/
 env/
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Generated runtime data
+chroma_db/
+uploads/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+tools/
 
 # Distribution / packaging
 build/
@@ -30,6 +45,9 @@ htmlcov/
 .idea/
 *.swp
 *.swo
+
+# Project-wide caches
+*.log
 
 # OS files
 .DS_Store

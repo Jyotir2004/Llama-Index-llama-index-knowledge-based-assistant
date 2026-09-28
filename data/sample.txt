@@ -1,0 +1,2 @@
+﻿LlamaIndex is a library for building retrieval-augmented generation (RAG) applications over custom data.
+It can ingest documents, build vector indexes, and answer user questions based on the indexed content.
