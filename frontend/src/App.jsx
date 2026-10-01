@@ -36,7 +36,7 @@ import SaveIcon from '@mui/icons-material/Save';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import DescriptionIcon from '@mui/icons-material/Description';
 
-const API_URL = import.meta.env.VITE_API_URL || '';
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'https://llama-index-llama-index-knowledge-based.onrender.com' : '');
 
 function App() {
   const [activeTab, setActiveTab] = useState(0); // 0: Upload Documents, 1: Raw Text Data
