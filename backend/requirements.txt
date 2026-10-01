@@ -5,8 +5,10 @@ python-multipart==0.0.9
 openai==1.108.1
 chromadb==0.6.3
 llama-index-core==0.14.5
-llama-index-embeddings-openai==0.7.0
+llama-index-embeddings-huggingface-api==0.6.0
 llama-index-vector-stores-chroma==0.5.5
 llama-index-llms-openai==0.7.10
+llama-index-llms-groq==0.6.1
+llama-index-llms-openai-like==0.8.0
 pypdf==5.1.0
 python-docx==1.1.2
