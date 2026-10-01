@@ -28,8 +28,8 @@ load_dotenv(BASE_DIR / ".env", override=True)
 app = FastAPI(title="LlamaIndex RAG App")
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"http://(localhost|127\.0\.0\.1)(:\d+)?",
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -197,6 +197,17 @@ def ensure_index():
             embed_model=embedding_model,
         )
     return app.state.index
+
+
+@app.get("/")
+@app.head("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "LlamaIndex Knowledge Hub API",
+        "docs": "/docs",
+        "health": "/api/health",
+    }
 
 
 @app.get("/api/health")
