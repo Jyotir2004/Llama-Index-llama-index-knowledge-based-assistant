@@ -1,3 +1,4 @@
+## welcome
 # Llama Index Knowledge Hub
 
 An end-to-end Retrieval-Augmented Generation (RAG) platform built with **LlamaIndex**, **FastAPI**, **ChromaDB**, **Hugging Face Inference API**, **Groq LLM**, and a modern **React + Vite** frontend.
